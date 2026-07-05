@@ -36,6 +36,13 @@ body {
   padding: 12px 15px;
 }
 
+.box {
+  margin-bottom: 12px;
+  padding: 10px;
+  background: rgba(255,255,255,0.03);
+  border-left: 2px solid #3a2f1b;
+}
+
 h3 {
   color: #e0c07a;
   margin: 10px 0 5px 0;
@@ -53,25 +60,16 @@ li {
   color: #ccc;
 }
 
-.box {
-  margin-bottom: 12px;
-  padding: 10px;
-  background: rgba(255,255,255,0.03);
-  border-left: 2px solid #3a2f1b;
-}
-
-.good li::marker {
-  color: #00ff99;
-}
-
-.bad li::marker {
-  color: #ff5555;
-}
-
 .note {
   font-size: 11px;
   opacity: 0.7;
-  margin-top: 10px;
+}
+
+/* IMAGE */
+.banner {
+  width: 100%;
+  border-bottom: 2px solid #3a2f1b;
+  display: block;
 }
 </style>
 </head>
@@ -80,13 +78,16 @@ li {
 
 <div class="window">
 
+  <!-- HEADER IMAGE -->
+  <img class="banner" src="regeln.png" alt="Regeln Banner">
+
   <div class="title">📜 METIN2 REGELN / PROJEKT LIMITS</div>
 
   <div class="section">
 
     <div class="box">
       <h3>🟢 WAS IST ERLAUBT?</h3>
-      <ul class="good">
+      <ul>
         <li>Pet-Entwicklungszeug (inkl. Bücher)</li>
         <li>Kostüme kaufen / drehen</li>
         <li>Fragmente für 6/7 kaufen</li>
@@ -107,11 +108,11 @@ li {
 
     <div class="box">
       <h3>🔴 WAS IST VERBOTEN?</h3>
-      <ul class="bad">
+      <ul>
         <li>Von anderen Spielern helfen lassen (Leveln etc.)</li>
         <li>UPP-Items am Markt kaufen</li>
-        <li>EQ (Ketten / Schilder etc.) am Markt kaufen</li>
-        <li>Items „tauschen“ über Markt/Spieler</li>
+        <li>EQ am Markt kaufen</li>
+        <li>Items tauschen über Markt/Spieler</li>
         <li>Items von anderen Spielern aufheben/annehmen</li>
         <li>AUTOJAGD bis Level 75</li>
         <li>Steine +4 am Markt kaufen</li>
@@ -122,7 +123,7 @@ li {
     <div class="box">
       <h3>⚠️ HINWEIS</h3>
       <p class="note">
-        Diese Regeln gelten nur für dieses Stream-Projekt und dienen zur Fairness & Progress-Tracking im Gameplay.
+        Diese Regeln gelten nur für dieses Stream-Projekt und dienen zur Fairness & Progress-Tracking.
       </p>
     </div>
 
